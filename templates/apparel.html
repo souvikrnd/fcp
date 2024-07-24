@@ -1,0 +1,370 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Discover stylish and comfortable clothing tailored for you.</h1>
+        <p>Find your perfect fit with our curated selection of stylish and comfortable clothing.</p>
+        <button class="top_button" id="get-in-touch" >
+            Get In Touch
+            <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+              <path clip-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" fill-rule="evenodd"></path>
+            </svg>
+        </button>
+    </div>
+    <div class="hero-image">
+        <img src="{{url_for('static',filename='products/4.png')}}" alt="T-shirt Model">
+    </div>
+</section>
+
+<section class="categories">
+    <h2>Category</h2>
+    <div class="category-list">
+        <button id="unisex">Unisex</button>
+        <button id="women">Women</button>
+        <button id="mens">Men</button>
+        <button id="couple-special">Couple Special</button>
+        <button id="winter-collection">Winter Collection</button>
+        <button id="festive-season">Festive Season</button>
+        <button id="made-for-you">Made For You</button>
+    </div>
+</section>
+<!-- Unisex section -->
+<section id="Unisex" class="pro_uni">
+    <h2>Unisex Apparels</h2>
+    <div class="product-cards">
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+    </div>
+</section>
+<!-- Women section -->
+<section id="women" class="pro_women">
+    <h2>Women Apparels</h2>
+    <div class="product-cards">
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+    </div>
+</section>
+<!-- Mens section -->
+<section id="mens" class="pro_mens">
+    <h2>Mens Apparels</h2>
+    <div class="product-cards">
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+    </div>
+</section>
+<!-- Couple section -->
+<section id="couple-special" class="pro_Couple">
+    <h2>Couple Special</h2>
+    <div class="product-cards">
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+    </div>
+</section>
+
+<!-- winter section -->
+<section id="couple-special" class="pro_winter">
+    <h2>Winter Special</h2>
+    <div class="product-cards">
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+    </div>
+</section>
+
+<!-- Festive section -->
+<section id="couple-special" class="pro_festive">
+    <h2>Festive Collection</h2>
+    <div class="product-cards">
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+    </div>
+</section>
+
+<!-- Made For You section -->
+<section id="couple-special" class="pro_you">
+    <h2>Made For You</h2>
+    <div class="product-cards">
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+        <div class="card">
+            <img src="{{url_for('static',filename='products/')}}" alt="T-shirt Printing">
+            <h3>T-shirt</h3>
+            <p>T-shirt</p>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    document.querySelectorAll('.category-list button').forEach(button => {
+        button.addEventListener('click', function() {
+            const sectionId = this.id;
+            if (sectionId) {
+                document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+
+{% endblock %}

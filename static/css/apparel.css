@@ -1,0 +1,460 @@
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 2rem 1rem; */
+    background: #f5f5f5;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    margin-bottom: 1.5rem;
+}
+
+/* top button   */
+
+.top_button {
+    /* position: relative; */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: #ff6600;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .top_button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+  }
+  
+  .top_button:hover .icon {
+    transform: translate(4px);
+  }
+  
+  .top_button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .top_button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+/* top button   */
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+}
+
+.feature-box {
+    max-width: 45%;
+    text-align: center;
+}
+
+.feature-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-box p {
+    font-size: 1rem;
+}
+
+.categories {
+    background: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.categories h2 {
+    margin-bottom: 1.5rem;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-list button {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category-list button:hover {
+    background: #ff6600;
+    color: #fff;
+    border-color: #ff6600;
+}
+
+/* pro_uni */
+.pro_uni {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.pro_uni .product-cards {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pro_uni .card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pro_uni .card img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+/* pro_women */
+.pro_women {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.pro_women .product-cards {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pro_women .card {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pro_women .card img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+/* pro_mens */
+.pro_mens {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.pro_mens .product-cards {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pro_mens .card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pro_mens .card img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+/* pro_couple */
+.pro_Couple {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.pro_Couple .product-cards {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pro_Couple .card {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pro_Couple .card img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+/* pro_winter */
+.pro_winter {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.pro_winter .product-cards {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pro_winter .card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pro_winter .card img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+} */
+.pro_winter {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.pro_winter .product-cards {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pro_winter .card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pro_winter .card img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+/* pro_festive */
+.pro_festive {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.pro_festive .product-cards {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pro_festive .card {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pro_festive .card img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+} */
+.pro_festive {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.pro_festive .product-cards {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pro_festive .card {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pro_festive .card img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+/* pro_you */
+.pro_you {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.pro_you .product-cards {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pro_you .card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pro_you .card img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+} */
+.pro_you {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.pro_you .product-cards {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pro_you .card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pro_you .card img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}

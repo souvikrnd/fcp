@@ -1,0 +1,312 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium Design <br> & Printing Solutions</h1>
+            <p>Elevate Your Brand with Our Exceptional Design and Printing Services</p>
+            <button class="top_button" id="get-in-touch" >
+                Get In Touch
+                <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                  <path clip-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" fill-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="hero-image">
+            <img src="{{url_for('static',filename='products/4.png')}}" alt="T-shirt Model">
+        </div>
+    </section>
+
+
+    <section class="categories">
+        <h2>Category</h2>
+        <div class="category-list">
+            <a href='apparel'>
+            <button>Apparels</button>
+            </a>
+            <button>Business Card</button>
+            <button>Brochure & Flyer</button>
+            <button>Poster & Banner</button>
+            <button>Custom Invitation</button>
+            <button>Catalog & Booklet</button>
+            <button>Packaging</button>
+            <button>Apparel Printing</button>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="product-cards">
+            <a href='apparel'>
+            <div class="card">
+                <img src="{{url_for('static',filename='products/card1 (3).png')}}" alt="T-shirt Printing">
+                <h3>Apparels</h3>
+                <p>Custom-designed apparel to showcase your brand.</p>
+            </div>
+            </a>
+
+            <a href='card'>
+            <div class="card">
+                <img src="{{url_for('static',filename='products/card_2.jpg')}}" alt="Business Cards">
+                <h3>Business Cards</h3>
+                <p>Professional business card to make a lasting impression.</p>
+            </div>
+            </a>
+            <a href='#'>
+            <div class="card">
+                <img src="{{url_for('static',filename='products/Card_4.jpg')}}" alt="Poster & Banner">
+                <h3>Social Media Posts</h3>
+                <p>Engaging, branded designs for social media.</p>
+            </div>
+            </a>
+            <a href="#">
+            <div class="card">
+                <img src="{{url_for('static',filename='products/standee.jpg')}}" alt="Poster & Banner">
+                <h3>Standees</h3>
+                <p>Custom-designed standees for events, trade shows, etc</p>
+            </div>
+            </a>
+            <a href="#">
+            <div class="card">
+                <img src="{{url_for('static',filename='products/card_3.jpg')}}" alt="Brochure & Flyer">
+                <h3>Brochure & Flyer</h3>
+                <p>Design and print promotional brochures and flyers.</p>
+            </div>
+            </a>
+            <a href="#">
+            <div class="card">
+                <img src="{{url_for('static',filename='products/card 6.jpg')}}" alt="T-shirt Printing">
+                <h3>Custom Invitation</h3>
+                <p>Elegant, personalized invitations for all occasions.</p>
+            </div>
+            </a>
+            <a href="#">
+            <div class="card">
+                <img src="{{url_for('static',filename='products/card_7.jpg')}}" alt="T-shirt Printing">
+                <h3>Facebook Ads</h3>
+                <p>Targeted ads to boost your brand's visibility.</p>
+            </div>
+            </a>
+            <a href="#">
+            <div class="card">
+                <img src="{{url_for('static',filename='products/card_8.jpg')}}" alt="T-shirt Printing">
+                <h3>Packaging</h3>
+                <p>Custom packaging to elevate your product's presentation.</p>
+            </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <h3>Welcome to Flashcraft Productions</h3>
+            <p>At Flashcraft Productions, we are passionate about providing top-notch graphic design and printing solutions. Our team of skilled professionals is dedicated to transforming your ideas into high-quality visual creations. Whether you're looking for custom t-shirts, business cards, brochures, or any other print materials, we have the expertise and resources to deliver exceptional results.</p>
+            <p>Our commitment to quality and customer satisfaction drives us to go above and beyond in every project we undertake. We take pride in our work and strive to ensure that each client receives personalized service and attention to detail. Explore our range of services and discover how we can help bring your vision to life.</p>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <h2>Customer Reviews</h2>
+        <br><br>
+        <div class="reviews-slider">
+            <div class="review-cards">
+                <div class="review-card">
+                    <p>"FCP provided excellent service and high-quality prints. Highly recommend!"</p>
+                    <div class="stars">
+                        <!-- Example: 4.5 stars -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span>- Jane Doe</span>
+                </div>
+                <div class="review-card">
+                    <p>"The business cards were perfect and arrived on time. Great job!"</p>
+                    <div class="stars">
+                        <!-- Example: 5 stars -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>- John Smith</span>
+                </div>
+                <div class="review-card">
+                    <p>"Fantastic t-shirt printing! The designs were exactly what I wanted."</p>
+                    <div class="stars">
+                        <!-- Example: 5 stars -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>- Emma Johnson</span>
+                </div>
+                <div class="review-card">
+                    <p>"Professional service and top-notch quality. I’ll definitely use FCP again."</p>
+                    <div class="stars">
+                        <!-- Example: 5 stars -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>- Mike Brown</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form class="form" action="/" method="POST">
+    
+                <div class="flex">
+                    <label>
+                        <input required="" placeholder="" type="text" class="input" name="first_name">
+                        <span>first name</span>
+                    </label>
+            
+                    <label>
+                        <input required="" placeholder="" type="text" class="input" name="last_name">
+                        <span>last name</span>
+                    </label>
+                </div>  
+                        
+                <label>
+                    <input required="" placeholder="" type="email" class="input" name="email">
+                    <span>email</span>
+                </label> 
+                    
+                <label>
+                    <input required="" name="contact" type="tel" placeholder="" class="input">
+                    <span>contact number</span>
+                </label>
+                <label>
+                    <textarea required="" rows="3" name="message" placeholder="" class="input01"></textarea>
+                    <span>message</span>
+                </label>
+                
+                <button class="fancy" href="#">
+                 submit
+                </button>
+            </form>
+
+            
+            {% with messages= get_flashed_messages() %}
+                {% if messages %}
+                    <ul>
+                        {% for message in messages %}
+                            <p>{{ message }}</p>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+
+            
+        </div>
+
+            
+    </section>
+
+    
+
+    <script>
+
+
+// get in touch scroll
+
+    document.getElementById('get-in-touch').addEventListener('click', function() {
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    });
+
+
+// get in touch scroll
+
+// Review Slider       
+    document.addEventListener('DOMContentLoaded', () => {
+    const reviewCards = document.querySelector('.review-cards');
+    const cardWidth = document.querySelector('.review-card').offsetWidth;
+    const slideInterval = 3000; // 3 seconds for auto-slide
+    let offset = 0;
+    const cardMargin = 20; // Margin between cards
+
+    // Clone the first set of review cards to enable looping
+    const firstClone = reviewCards.children[0].cloneNode(true);
+    reviewCards.appendChild(firstClone);
+
+    // Function to move to the next slide
+    const moveToNextSlide = () => {
+        const maxOffset = -((reviewCards.children.length - 1) * (cardWidth + cardMargin));
+        offset = Math.max(offset - (cardWidth + cardMargin), maxOffset);
+        reviewCards.style.transform = `translateX(${offset}px)`;
+
+        // When the last card is reached, reset to the first card
+        if (offset === maxOffset) {
+            setTimeout(() => {
+                reviewCards.style.transition = 'none'; // Disable transition for instant jump
+                reviewCards.style.transform = `translateX(0px)`;
+                offset = 0;
+                setTimeout(() => {
+                    reviewCards.style.transition = 'transform 0.5s ease-in-out'; // Re-enable transition
+                }, 50); // Small delay to ensure the transition is re-enabled
+            }, slideInterval);
+        }
+    };
+
+    // Function to move to the previous slide
+    const moveToPrevSlide = () => {
+        offset = Math.min(offset + (cardWidth + cardMargin), 0);
+        reviewCards.style.transform = `translateX(${offset}px)`;
+
+        // When the first card is reached, move to the last card
+        if (offset === 0) {
+            setTimeout(() => {
+                reviewCards.style.transition = 'none'; // Disable transition for instant jump
+                reviewCards.style.transform = `translateX(${-((reviewCards.children.length - 1) * (cardWidth + cardMargin))}px)`;
+                offset = -((reviewCards.children.length - 1) * (cardWidth + cardMargin));
+                setTimeout(() => {
+                    reviewCards.style.transition = 'transform 0.5s ease-in-out'; // Re-enable transition
+                }, 50); // Small delay to ensure the transition is re-enabled
+            }, 500); // Delay to allow the user to see the transition
+        }
+    };
+
+    // Auto-slide function
+    const autoSlide = () => {
+        moveToNextSlide();
+        setTimeout(autoSlide, slideInterval);
+    };
+
+    // Start the auto-slide
+    autoSlide();
+
+    // Add event listeners for manual slide controls
+    document.querySelector('.slider-next').addEventListener('click', () => {
+        moveToNextSlide();
+        clearTimeout(autoSlideTimeout);
+        autoSlideTimeout = setTimeout(autoSlide, slideInterval);
+    });
+
+    document.querySelector('.slider-prev').addEventListener('click', () => {
+        moveToPrevSlide();
+        clearTimeout(autoSlideTimeout);
+        autoSlideTimeout = setTimeout(autoSlide, slideInterval);
+    });
+
+    let autoSlideTimeout = setTimeout(autoSlide, slideInterval);
+});
+// Review Slider 
+
+    </script>
+
+    
+
+    {% endblock %}
